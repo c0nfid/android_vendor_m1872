@@ -19,22 +19,3 @@
 soong_namespace {
 }
 
-android_app_import {
-	name: "GCam",
-	owner: "c0nfid",
-	apk: "proprietary/app/GCam/GCam.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "TapTap",
-	owner: "c0nfid",
-	apk: "proprietary/app/TapTap/TapTap.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}

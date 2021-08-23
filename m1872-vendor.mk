@@ -18,8 +18,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/meizu/m1872
 
 PRODUCT_PACKAGES += \
-    GCam \
-    TapTap
+    GCam 
 
 PRODUCT_COPY_FILES += \
     vendor/meizu/m1872/proprietary/etc/vstab_db_0_1080p_video_30fps.config:$(TARGET_COPY_OUT_SYSTEM)/etc/vstab_db_0_1080p_video_30fps.config \
