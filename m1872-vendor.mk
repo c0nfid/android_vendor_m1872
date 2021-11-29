@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1872/proprietary/lib/libaudioroute.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaudioroute.so \
     vendor/meizu/m1872/proprietary/lib64/libaudioroute.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudioroute.so \
     vendor/meizu/m1872/proprietary/bin/meizu_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/meizu_charger \
-    vendor/meizu/m1872/proprietary/vendor/bin/hw/meizu.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/meizu.biometrics.fingerprint@2.1-service \
     vendor/meizu/m1872/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/meizu/m1872/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/meizu/m1872/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -38,8 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1872/proprietary/vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
     vendor/meizu/m1872/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/meizu/m1872/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
-    vendor/meizu/m1872/proprietary/vendor/etc/init/meizu.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/meizu.biometrics.fingerprint@2.1-service.rc \
-    vendor/meizu/m1872/proprietary/vendor/etc/permissions/com.synaptics.fingerprint.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.synaptics.fingerprint.extension.xml \
     vendor/meizu/m1872/proprietary/vendor/etc/sensors/config/8909w_Compal_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/8909w_Compal_ak991x_0.json \
     vendor/meizu/m1872/proprietary/vendor/etc/sensors/config/8909w_Compal_bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/8909w_Compal_bmi160_0.json \
     vendor/meizu/m1872/proprietary/vendor/etc/sensors/config/8909w_Compal_ltr308_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/8909w_Compal_ltr308_0.json \
@@ -205,7 +202,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1872/proprietary/vendor/firmware/mzfp64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b06 \
     vendor/meizu/m1872/proprietary/vendor/firmware/mzfp64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b07 \
     vendor/meizu/m1872/proprietary/vendor/firmware/mzfp64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.mdt \
-    vendor/meizu/m1872/proprietary/vendor/framework/com.synaptics.fingerprint.extension.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.synaptics.fingerprint.extension.jar \
     vendor/meizu/m1872/proprietary/vendor/lib/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.truly_cmb433.so \
     vendor/meizu/m1872/proprietary/vendor/lib/camera/com.qti.sensor.imx318.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx318.so \
     vendor/meizu/m1872/proprietary/vendor/lib/camera/com.qti.sensor.imx334.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx334.so \
@@ -334,16 +330,8 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1872/proprietary/vendor/lib/modules/qca_cld3_wlan.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/qca_cld3_wlan.ko \
     vendor/meizu/m1872/proprietary/vendor/lib/modules/rdbg.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/rdbg.ko \
     vendor/meizu/m1872/proprietary/vendor/lib64/hw/audio.primary.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.sdm710.so \
-    vendor/meizu/m1872/proprietary/vendor/lib64/hw/fingerprint.syna.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.syna.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/hw/fingerprint.syna.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.syna.sdm710.so \
     vendor/meizu/m1872/proprietary/vendor/lib64/hw/vibrator.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.sdm710.so \
     vendor/meizu/m1872/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/meizu/m1872/proprietary/vendor/lib64/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_vendor.so \
     vendor/meizu/m1872/proprietary/vendor/lib64/libvfmtztransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvfmtztransport.so \
-    vendor/meizu/m1872/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so
-# Fingerprint - Goodix (wtf Meizu?!)
-    PRODUCT_COPY_FILES += \
-    vendor/meizu/m1872/proprietary/vendor/lib64/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.so \
-    vendor/meizu/m1872/proprietary/vendor/lib64/libgoodixhwfingerprint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixhwfingerprint.so \
-    vendor/meizu/m1872/proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so \
-    vendor/meizu/m1872/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
-    vendor/meizu/m1872/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so
