@@ -330,8 +330,16 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1872/proprietary/vendor/lib/modules/qca_cld3_wlan.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/qca_cld3_wlan.ko \
     vendor/meizu/m1872/proprietary/vendor/lib/modules/rdbg.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/rdbg.ko \
     vendor/meizu/m1872/proprietary/vendor/lib64/hw/audio.primary.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.sdm710.so \
-    vendor/meizu/m1872/proprietary/vendor/lib64/hw/fingerprint.syna.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.syna.sdm710.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/hw/fingerprint.synaptics.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.synaptics.sdm710.so \
     vendor/meizu/m1872/proprietary/vendor/lib64/hw/vibrator.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.sdm710.so \
     vendor/meizu/m1872/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/meizu/m1872/proprietary/vendor/lib64/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_vendor.so \
     vendor/meizu/m1872/proprietary/vendor/lib64/libvfmtztransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvfmtztransport.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/libkeymaster_messages-goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages-goodix.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/libkeymaster_portable-goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable-goodix.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/libsoftkeymasterdevice-goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoftkeymasterdevice-goodix.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/hw/fingerprint.goodix.sdm710.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.sdm710.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/libgoodixhwfingerprint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixhwfingerprint.so \
+    vendor/meizu/m1872/proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so 
